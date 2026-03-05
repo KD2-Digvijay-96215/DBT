@@ -1,0 +1,21 @@
+DBT ASSIGNMENT-2
+
+Q1.SELECT cnum,cname,city,rating,snum FROM customers WHERE snum=1001;
+
+Q2.SELECT rating,cname FROM customers WHERE city='San Jose';
+
+Q3.SELECT DISTINCT(snum) FROM orders WHERE snum;
+
+Q4.SELECT onum,amt,odate,cnum,snum FROM orders WHERE amt>1000;
+
+Q5.SELECT sname,city,comm FROM salespeople WHERE city='London' AND comm>0.10;
+
+Q6.SELECT cnum,cname,city,rating,snum FROM customers WHERE rating>100 OR city='ROME';
+
+Q7.SELECT * FROM orders WHERE (amt<1000 OR NOT (odate='1990-10-03' AND cnum>2002));
+
+Q8.SELECT * FROM orders WHERE NOT(odate='1990-10-03' OR snum >1600) AND amt>=1500;
+
+Q9.SELECT snum,sname,city,comm FROM salespeople WHERE comm BETWEEN 0.12 AND 0.14;
+
+Q10.SELECT onum,amt,odate,cnum,snum FROM orders WHERE amt>100;
